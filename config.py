@@ -21,10 +21,8 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 60))
 # Chat id of a group for logging bot's activities
 LOGGER_ID = int(getenv("LOGGER_ID", None))
 
-# Your User ID.
-OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "").split())
-)  # Input type must be interger
+# Get this value from Rose bot on Telegram by /id
+OWNER_ID = int(getenv("OWNER_ID", 7518534563))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
